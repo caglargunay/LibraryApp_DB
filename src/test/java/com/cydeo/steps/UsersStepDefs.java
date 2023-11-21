@@ -70,7 +70,7 @@ public class UsersStepDefs {
         usersPage.searchField.sendKeys(email);
         BrowserUtil.waitFor(3);
 
-
+        
         // we will click on edit user button based on the email that we updated
         BrowserUtil.waitFor(3);
         usersPage.editUser(email).click();

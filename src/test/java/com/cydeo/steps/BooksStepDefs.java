@@ -58,7 +58,7 @@ public class BooksStepDefs {
         List<String> expectedCategoryList = DB_Util.getColumnDataAsList(1);
         System.out.println("expectedCategoryList = " + expectedCategoryList);
         //compare UI vs DB
-        Assert.assertEquals("Verify category list is matching",actualCategoryList,expectedCategoryList);
+        Assert.assertEquals("Verify category list is not matching",actualCategoryList,expectedCategoryList);
     }
 
     @Then("book information must match the database for {string}")
